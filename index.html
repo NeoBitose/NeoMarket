@@ -1,37 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace PWA MVP</title>
+    <title>Beranda - ArqivaStore</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Menghilangkan scrollbar tapi tetap bisa di-scroll */
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .hide-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-
 <body class="bg-slate-50 font-sans text-slate-900">
 
     <div class="max-w-md mx-auto bg-white min-h-screen relative shadow-2xl">
-
-        <header
-            class="sticky top-0 z-50 bg-white/80 backdrop-blur-md px-4 py-3 border-b flex justify-between items-center">
+        
+        <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md px-4 py-3 border-b flex justify-between items-center">
             <div>
-                <h1 class="text-xl font-bold text-indigo-600 tracking-tight">ArqivaMarket</h1>
-                <p class="text-[10px] text-slate-400 -mt-1 uppercase tracking-widest">Premium Store</p>
+                <h1 class="text-xl font-bold text-indigo-600 tracking-tight">ArqivaStore</h1>
+                <p class="text-[10px] text-slate-500 -mt-1 uppercase tracking-widest font-medium">Katalog Paraloket</p>
             </div>
             <div class="flex gap-4 text-slate-600">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 <button class="relative">
                     <i class="fa-solid fa-bell"></i>
                     <span class="absolute -top-1 -right-1 bg-red-500 w-2 h-2 rounded-full border-2 border-white"></span>
@@ -40,167 +29,151 @@
         </header>
 
         <main class="pb-24">
-
+            
             <section class="px-4 py-4">
-                <div
-                    class="w-full h-40 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 text-white flex flex-col justify-center relative overflow-hidden">
-                    <div class="z-10">
-                        <h2 class="text-2xl font-bold leading-tight">Promo Cuci Gudang!</h2>
-                        <p class="text-indigo-100 text-sm mt-1">Diskon hingga 50% untuk kategori Elektronik.</p>
-                        <button
-                            class="mt-3 bg-white text-indigo-600 px-4 py-1.5 rounded-lg text-xs font-bold shadow-lg">Cek
-                            Sekarang</button>
+                <div class="w-full h-40 bg-gradient-to-br from-indigo-600 to-blue-500 rounded-2xl p-6 text-white flex flex-col justify-center relative overflow-hidden shadow-md">
+                    <div class="z-10 w-2/3">
+                        <h2 class="text-xl font-bold leading-tight">Selamat Datang di ArqivaStore!</h2>
+                        <p class="text-indigo-100 text-xs mt-1 leading-relaxed">Pilih barangnya di sini, bayar langsung di Kasir POS kami dengan mudah.</p>
+                        <a href="toko.html" class="inline-block mt-3 bg-white text-indigo-600 px-4 py-1.5 rounded-lg text-xs font-bold shadow-lg hover:bg-slate-50 transition">Lihat Semua</a>
                     </div>
-                    <i class="fa-solid fa-bag-shopping absolute -right-4 -bottom-4 text-8xl opacity-10 rotate-12"></i>
+                    <i class="fa-solid fa-store absolute -right-6 -bottom-4 text-8xl opacity-20 rotate-12"></i>
                 </div>
             </section>
 
             <section class="py-2">
+                <h3 class="px-4 font-bold text-slate-800 text-sm mb-3">Kategori Pilihan</h3>
                 <div class="flex px-4 gap-4 overflow-x-auto hide-scrollbar">
-                    <div class="flex flex-col items-center gap-2 flex-shrink-0">
-                        <div
-                            class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600">
+                    <a href="toko.html" class="flex flex-col items-center gap-2 flex-shrink-0 cursor-pointer group">
+                        <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
                             <i class="fa-solid fa-laptop text-xl"></i>
                         </div>
-                        <span class="text-[11px] font-medium text-slate-600">Elektronik</span>
-                    </div>
-                    <div class="flex flex-col items-center gap-2 flex-shrink-0">
-                        <div
-                            class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600">
-                            <i class="fa-solid fa-shirt text-xl"></i>
+                        <span class="text-[11px] font-medium text-slate-600">Hardware</span>
+                    </a>
+                    <a href="toko.html" class="flex flex-col items-center gap-2 flex-shrink-0 cursor-pointer group">
+                        <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-code text-xl"></i>
                         </div>
-                        <span class="text-[11px] font-medium text-slate-600">Fashion</span>
-                    </div>
-                    <div class="flex flex-col items-center gap-2 flex-shrink-0">
-                        <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center text-green-600">
-                            <i class="fa-solid fa-utensils text-xl"></i>
+                        <span class="text-[11px] font-medium text-slate-600">Software</span>
+                    </a>
+                    <a href="toko.html" class="flex flex-col items-center gap-2 flex-shrink-0 cursor-pointer group">
+                        <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-headphones text-xl"></i>
                         </div>
-                        <span class="text-[11px] font-medium text-slate-600">Kuliner</span>
-                    </div>
-                    <div class="flex flex-col items-center gap-2 flex-shrink-0">
-                        <div class="w-14 h-14 bg-pink-50 rounded-2xl flex items-center justify-center text-pink-600">
-                            <i class="fa-solid fa-couch text-xl"></i>
+                        <span class="text-[11px] font-medium text-slate-600">Aksesoris</span>
+                    </a>
+                    <a href="toko.html" class="flex flex-col items-center gap-2 flex-shrink-0 cursor-pointer group">
+                        <div class="w-14 h-14 bg-pink-50 rounded-2xl flex items-center justify-center text-pink-600 group-hover:bg-pink-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-ticket text-xl"></i>
                         </div>
-                        <span class="text-[11px] font-medium text-slate-600">Home</span>
-                    </div>
-                    <div class="flex flex-col items-center gap-2 flex-shrink-0">
-                        <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600">
+                        <span class="text-[11px] font-medium text-slate-600">Voucher</span>
+                    </a>
+                    <a href="toko.html" class="flex flex-col items-center gap-2 flex-shrink-0 cursor-pointer group">
+                        <div class="w-14 h-14 bg-slate-100 rounded-2xl flex items-center justify-center text-slate-600 group-hover:bg-slate-600 group-hover:text-white transition-colors duration-300">
                             <i class="fa-solid fa-ellipsis text-xl"></i>
                         </div>
                         <span class="text-[11px] font-medium text-slate-600">Lainnya</span>
-                    </div>
+                    </a>
                 </div>
             </section>
 
             <section class="px-4 py-6">
                 <div class="flex justify-between items-end mb-4">
-                    <h3 class="font-bold text-lg">Produk Terbaru</h3>
-                    <a href="#" class="text-xs text-indigo-600 font-semibold">Lihat Semua</a>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">Rekomendasi Hari Ini</h3>
+                        <p class="text-[10px] text-slate-500 mt-0.5">Stok tersedia di kasir kami</p>
+                    </div>
+                    <a href="toko.html" class="text-xs text-indigo-600 font-semibold hover:underline">Lihat Semua</a>
                 </div>
-
+                
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm">
-                        <div class="h-36 bg-slate-200 relative">
-                            <div class="absolute inset-0 flex items-center justify-center text-slate-400">
+                    <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <div class="h-36 bg-slate-100 relative group cursor-pointer">
+                             <div class="absolute inset-0 flex items-center justify-center text-slate-300">
                                 <i class="fa-regular fa-image text-3xl"></i>
-                            </div>
-                            <span
-                                class="absolute top-2 left-2 bg-green-500 text-white text-[10px] px-2 py-0.5 rounded-full font-bold">Tersedia</span>
+                             </div>
+                             <span class="absolute top-2 left-2 bg-green-100 text-green-700 border border-green-200 text-[9px] px-2 py-0.5 rounded-md font-bold flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-check-circle"></i> Ready di POS
+                             </span>
                         </div>
                         <div class="p-3">
-                            <h4 class="text-sm font-semibold text-slate-800 line-clamp-1">Keyboard Mechanical RGB</h4>
-                            <p class="text-xs text-slate-400 mt-0.5 italic">Stock: 12</p>
+                            <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Keyboard Mechanical TKL Blue Switch</h4>
                             <div class="flex justify-between items-center mt-3">
                                 <span class="text-indigo-600 font-bold text-sm">Rp 450.000</span>
-                                <button
-                                    class="bg-indigo-600 text-white w-7 h-7 rounded-lg flex items-center justify-center hover:bg-indigo-700">
-                                    <i class="fa-solid fa-plus text-xs"></i>
-                                </button>
                             </div>
+                            <button class="w-full mt-3 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors py-1.5 rounded-lg text-xs font-bold">
+                                Lihat Detail
+                            </button>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm">
-                        <div class="h-36 bg-slate-200 relative">
-                            <div class="absolute inset-0 flex items-center justify-center text-slate-400">
+                    <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <div class="h-36 bg-slate-100 relative group cursor-pointer">
+                             <div class="absolute inset-0 flex items-center justify-center text-slate-300">
                                 <i class="fa-regular fa-image text-3xl"></i>
-                            </div>
-                            <span
-                                class="absolute top-2 left-2 bg-green-500 text-white text-[10px] px-2 py-0.5 rounded-full font-bold">Tersedia</span>
+                             </div>
+                             <span class="absolute top-2 left-2 bg-green-100 text-green-700 border border-green-200 text-[9px] px-2 py-0.5 rounded-md font-bold flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-check-circle"></i> Ready di POS
+                             </span>
                         </div>
                         <div class="p-3">
-                            <h4 class="text-sm font-semibold text-slate-800 line-clamp-1">Mouse Wireless Pro</h4>
-                            <p class="text-xs text-slate-400 mt-0.5 italic">Stock: 5</p>
+                            <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Mouse Wireless Pro Silent Click</h4>
                             <div class="flex justify-between items-center mt-3">
                                 <span class="text-indigo-600 font-bold text-sm">Rp 210.000</span>
-                                <button
-                                    class="bg-indigo-600 text-white w-7 h-7 rounded-lg flex items-center justify-center hover:bg-indigo-700">
-                                    <i class="fa-solid fa-plus text-xs"></i>
-                                </button>
                             </div>
+                            <button class="w-full mt-3 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors py-1.5 rounded-lg text-xs font-bold">
+                                Lihat Detail
+                            </button>
                         </div>
                     </div>
-
+                    
                     <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm">
-                        <div class="h-36 bg-slate-200 relative">
-                            <div class="absolute inset-0 flex items-center justify-center text-slate-400">
+                        <div class="h-36 bg-slate-100 relative">
+                             <div class="absolute inset-0 flex items-center justify-center text-slate-300">
                                 <i class="fa-regular fa-image text-3xl"></i>
-                            </div>
+                             </div>
+                             <span class="absolute top-2 left-2 bg-red-50 text-red-600 border border-red-100 text-[9px] px-2 py-0.5 rounded-md font-bold flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-xmark-circle"></i> Stok Habis
+                             </span>
                         </div>
-                        <div class="p-3">
-                            <h4 class="text-sm font-semibold text-slate-800 line-clamp-1">Headset Gaming X1</h4>
-                            <p class="text-xs text-slate-400 mt-0.5 italic text-red-400">Out of Stock</p>
+                        <div class="p-3 opacity-60">
+                            <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Headset Gaming Surround 7.1</h4>
                             <div class="flex justify-between items-center mt-3">
-                                <span class="text-indigo-600 font-bold text-sm text-slate-400">Rp 750.000</span>
-                                <button disabled
-                                    class="bg-slate-200 text-slate-400 w-7 h-7 rounded-lg flex items-center justify-center">
-                                    <i class="fa-solid fa-plus text-xs"></i>
-                                </button>
+                                <span class="text-slate-500 font-bold text-sm">Rp 750.000</span>
                             </div>
+                            <button disabled class="w-full mt-3 bg-slate-100 text-slate-400 py-1.5 rounded-lg text-xs font-bold cursor-not-allowed">
+                                Tidak Tersedia
+                            </button>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <nav
-            class="fixed bottom-0 w-full max-w-md bg-white/90 backdrop-blur-lg border-t px-6 py-3 flex justify-between items-center z-50">
-
-            <a href="index.html"
-                class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
+        <nav class="fixed bottom-0 w-full max-w-md bg-white/95 backdrop-blur-lg border-t px-6 py-3 flex justify-between items-center z-50">
+            <a href="index.html" class="flex flex-col items-center gap-1 text-indigo-600">
                 <i class="fa-solid fa-house text-lg"></i>
-                <span class="text-[10px] font-medium">Home</span>
+                <span class="text-[10px] font-bold">Beranda</span>
             </a>
-
-            <a href="search.html"
-                class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
+            <a href="toko.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
+                <i class="fa-solid fa-store text-lg"></i>
+                <span class="text-[10px] font-medium">Toko</span>
+            </a>
+            <a href="search.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
                 <i class="fa-solid fa-magnifying-glass text-lg"></i>
                 <span class="text-[10px] font-medium">Cari</span>
             </a>
-
-            <a href="cart.html" class="flex flex-col items-center gap-1 -mt-8 hover:scale-105 transition-transform">
-                <div
-                    class="bg-slate-800 w-12 h-12 rounded-full border-4 border-white shadow-lg flex items-center justify-center text-white text-lg">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <span class="text-[10px] font-medium text-slate-400 mt-1">Keranjang</span>
+            <a href="promo.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
+                <i class="fa-solid fa-tags text-lg"></i>
+                <span class="text-[10px] font-medium">Promo</span>
             </a>
-
-            <a href="transaction.html"
-                class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
-                <i class="fa-solid fa-receipt text-lg"></i>
-                <span class="text-[10px] font-medium">Transaksi</span>
-            </a>
-
-            <a href="profile.html"
-                class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
-                <i class="fa-solid fa-user text-lg"></i>
-                <span class="text-[10px] font-medium">Profil</span>
+            <a href="kontak.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
+                <i class="fa-solid fa-circle-user text-lg"></i>
+                <span class="text-[10px] font-medium">Kontak</span>
             </a>
         </nav>
 
     </div>
 
 </body>
-
 </html>

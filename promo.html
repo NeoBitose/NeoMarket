@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo - ArqivaStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        /* Efek gerigi untuk voucher */
+        .voucher-edge {
+            background-image: radial-gradient(circle at 0px 8px, transparent 4px, white 5px);
+            background-size: 100% 16px;
+            background-position: left;
+            background-repeat: repeat-y;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <div class="max-w-md mx-auto bg-slate-50 min-h-screen relative shadow-2xl flex flex-col">
+        
+        <header class="sticky top-0 z-50 bg-white pt-4 pb-3 px-4 border-b shadow-sm">
+            <h1 class="text-xl font-bold text-slate-800">Promo & Voucher</h1>
+            <p class="text-[10px] text-slate-500 uppercase tracking-widest font-medium">Spesial untuk Anda hari ini</p>
+        </header>
+
+        <main class="flex-1 pb-24 overflow-y-auto">
+            
+            <div class="bg-white py-3 border-b overflow-x-auto hide-scrollbar flex px-4 gap-2">
+                <button class="bg-indigo-600 text-white px-5 py-2 rounded-full text-xs font-bold shadow-md shadow-indigo-100 whitespace-nowrap">Semua Promo</button>
+                <button class="bg-slate-100 text-slate-600 px-5 py-2 rounded-full text-xs font-bold whitespace-nowrap hover:bg-slate-200 transition">Diskon Produk</button>
+                <button class="bg-slate-100 text-slate-600 px-5 py-2 rounded-full text-xs font-bold whitespace-nowrap hover:bg-slate-200 transition">Cashback</button>
+                <button class="bg-slate-100 text-slate-600 px-5 py-2 rounded-full text-xs font-bold whitespace-nowrap hover:bg-slate-200 transition">Bundling</button>
+            </div>
+
+            <div class="p-4 space-y-4">
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden relative">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-[9px] font-bold px-3 py-1 rounded-bl-lg z-10 flex items-center gap-1">
+                        <i class="fa-solid fa-clock"></i> Berakhir Besok
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="w-1/3 bg-gradient-to-br from-orange-400 to-red-500 p-4 flex flex-col items-center justify-center text-white text-center">
+                            <span class="text-3xl font-black leading-none">20%</span>
+                            <span class="text-[10px] uppercase font-bold mt-1 tracking-widest">Diskon</span>
+                        </div>
+                        <div class="w-2/3 p-4 flex flex-col justify-between bg-white voucher-edge pl-6 border-l border-dashed border-slate-200">
+                            <div>
+                                <h3 class="text-sm font-bold text-slate-800 leading-tight">Promo Aksesoris PC</h3>
+                                <p class="text-[10px] text-slate-500 mt-1 line-clamp-2">Dapatkan diskon 20% untuk semua produk Mouse & Keyboard tanpa minimum pembelian.</p>
+                            </div>
+                            <button class="mt-3 w-full border border-indigo-600 text-indigo-600 text-xs font-bold py-1.5 rounded-lg hover:bg-indigo-50 transition">
+                                Pakai di Kasir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden relative">
+                    <div class="flex">
+                        <div class="w-1/3 bg-gradient-to-br from-indigo-500 to-purple-600 p-4 flex flex-col items-center justify-center text-white text-center">
+                            <i class="fa-solid fa-ticket text-2xl mb-1"></i>
+                            <span class="text-[10px] uppercase font-bold tracking-widest">Voucher</span>
+                        </div>
+                        <div class="w-2/3 p-4 flex flex-col justify-between bg-white voucher-edge pl-6 border-l border-dashed border-slate-200">
+                            <div>
+                                <h3 class="text-sm font-bold text-slate-800 leading-tight">Potongan Rp 50.000</h3>
+                                <p class="text-[10px] text-slate-500 mt-1 line-clamp-2">Min. transaksi Rp 500.000 untuk kategori Hardware. Tunjukkan kode ke kasir.</p>
+                                <div class="bg-slate-100 px-2 py-1 rounded text-center mt-2 border border-slate-200 border-dashed">
+                                    <span class="font-mono font-bold text-indigo-600 tracking-widest text-xs">ARQ-HW50K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden relative">
+                    <div class="absolute top-0 right-0 bg-emerald-500 text-white text-[9px] font-bold px-3 py-1 rounded-bl-lg z-10">
+                        Spesial Bundling
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="w-1/3 bg-slate-800 p-4 flex flex-col items-center justify-center text-white text-center">
+                            <i class="fa-solid fa-layer-group text-2xl mb-1 text-emerald-400"></i>
+                            <span class="text-2xl font-black leading-none">WFO</span>
+                        </div>
+                        <div class="w-2/3 p-4 flex flex-col justify-between bg-white pl-4">
+                            <div>
+                                <h3 class="text-sm font-bold text-slate-800 leading-tight">Paket Work From Office</h3>
+                                <p class="text-[10px] text-slate-500 mt-1 line-clamp-2">Beli Keyboard Mechanical + Mouse Wireless hanya Rp 600.000 (Hemat Rp 60.000).</p>
+                            </div>
+                            <button class="mt-3 w-full bg-slate-800 text-white text-xs font-bold py-1.5 rounded-lg hover:bg-slate-700 transition shadow-md">
+                                Lihat Detail Paket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <nav class="fixed bottom-0 w-full max-w-md bg-white/95 backdrop-blur-lg border-t px-6 py-3 flex justify-between items-center z-50">
+            <a href="index.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
+                <i class="fa-solid fa-house text-lg"></i>
+                <span class="text-[10px] font-medium">Beranda</span>
+            </a>
+            <a href="toko.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
+                <i class="fa-solid fa-store text-lg"></i>
+                <span class="text-[10px] font-medium">Toko</span>
+            </a>
+            <a href="search.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
+                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                <span class="text-[10px] font-medium">Cari</span>
+            </a>
+            <a href="promo.html" class="flex flex-col items-center gap-1 text-indigo-600">
+                <i class="fa-solid fa-tags text-lg"></i>
+                <span class="text-[10px] font-bold">Promo</span>
+            </a>
+            <a href="kontak.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-indigo-600 transition">
+                <i class="fa-solid fa-circle-user text-lg"></i>
+                <span class="text-[10px] font-medium">Kontak</span>
+            </a>
+        </nav>
+
+    </div>
+
+</body>
+</html>
